@@ -83,5 +83,15 @@ namespace IterkoczeIDE
 
             Process.Start(info);
         }
+
+        private void interpretToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ProcessStartInfo info = new();
+            info.WorkingDirectory = filePath;
+            info.FileName = "ippScriptInterpreter";
+            info.Arguments = fileName;
+
+            Process.Start(info);
+        }
     }
 }

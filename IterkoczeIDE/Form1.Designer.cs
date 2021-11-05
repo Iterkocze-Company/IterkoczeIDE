@@ -39,6 +39,8 @@ namespace IterkoczeIDE
             this.kompilatorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kompilujToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kompilujIUruchomToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.interpretToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.Code)).BeginInit();
             this.menu.SuspendLayout();
             this.SuspendLayout();
@@ -68,6 +70,7 @@ namespace IterkoczeIDE
             this.Code.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.Code.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.Code.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Code.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Code.Hotkeys = resources.GetString("Code.Hotkeys");
             this.Code.IsReplaceMode = false;
             this.Code.Language = FastColoredTextBoxNS.Language.Lua;
@@ -122,7 +125,9 @@ namespace IterkoczeIDE
             // 
             this.kompilatorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.kompilujToolStripMenuItem,
-            this.kompilujIUruchomToolStripMenuItem});
+            this.kompilujIUruchomToolStripMenuItem,
+            this.toolStripSeparator1,
+            this.interpretToolStripMenuItem});
             this.kompilatorToolStripMenuItem.Name = "kompilatorToolStripMenuItem";
             this.kompilatorToolStripMenuItem.Size = new System.Drawing.Size(68, 20);
             this.kompilatorToolStripMenuItem.Text = "&Compiler";
@@ -140,6 +145,18 @@ namespace IterkoczeIDE
             this.kompilujIUruchomToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.kompilujIUruchomToolStripMenuItem.Text = "Compile and &run";
             this.kompilujIUruchomToolStripMenuItem.Click += new System.EventHandler(this.kompilujIUruchomToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            // 
+            // interpretToolStripMenuItem
+            // 
+            this.interpretToolStripMenuItem.Name = "interpretToolStripMenuItem";
+            this.interpretToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.interpretToolStripMenuItem.Text = "&Interpret";
+            this.interpretToolStripMenuItem.Click += new System.EventHandler(this.interpretToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -169,6 +186,8 @@ namespace IterkoczeIDE
         private System.Windows.Forms.ToolStripMenuItem kompilujIUruchomToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem newFileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem openFileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem interpretToolStripMenuItem;
     }
 }
 
